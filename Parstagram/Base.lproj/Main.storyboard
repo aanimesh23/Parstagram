@@ -231,35 +231,37 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="370"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6Cb-U9-5bc">
-                                                    <rect key="frame" x="20" y="38" width="374" height="300"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="374" id="Af4-4s-Zbd"/>
-                                                        <constraint firstAttribute="width" secondItem="6Cb-U9-5bc" secondAttribute="height" multiplier="187:150" id="gYJ-Sg-BQb"/>
-                                                    </constraints>
-                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgT-Fv-XbB">
-                                                    <rect key="frame" x="16" y="11" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="16" y="11" width="56.5" height="26.5"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FK4-7k-Oru">
                                                     <rect key="frame" x="20" y="346" width="374" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="374" id="F2Q-nu-cXe"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6Cb-U9-5bc">
+                                                    <rect key="frame" x="0.0" y="45" width="424" height="300"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="300" id="gcW-gs-rGX"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="6Cb-U9-5bc" firstAttribute="leading" secondItem="FK4-7k-Oru" secondAttribute="leading" id="4VP-s8-Vtt"/>
-                                                <constraint firstItem="6Cb-U9-5bc" firstAttribute="leading" secondItem="dH2-TF-dUL" secondAttribute="leadingMargin" id="8ZL-Ge-eHq"/>
-                                                <constraint firstItem="fgT-Fv-XbB" firstAttribute="top" secondItem="dH2-TF-dUL" secondAttribute="topMargin" id="9Yg-A9-XgA"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="FK4-7k-Oru" secondAttribute="bottom" constant="-8" id="BYn-uv-YGh"/>
-                                                <constraint firstItem="6Cb-U9-5bc" firstAttribute="trailing" secondItem="FK4-7k-Oru" secondAttribute="trailing" id="bkN-Mq-R2X"/>
-                                                <constraint firstItem="FK4-7k-Oru" firstAttribute="top" secondItem="6Cb-U9-5bc" secondAttribute="bottom" constant="8" symbolic="YES" id="edW-c0-ZKL"/>
-                                                <constraint firstItem="fgT-Fv-XbB" firstAttribute="leading" secondItem="dH2-TF-dUL" secondAttribute="leadingMargin" constant="-4" id="inp-3b-Uwk"/>
-                                                <constraint firstItem="6Cb-U9-5bc" firstAttribute="top" secondItem="fgT-Fv-XbB" secondAttribute="bottom" constant="6" id="nMO-5A-vQv"/>
+                                                <constraint firstItem="fgT-Fv-XbB" firstAttribute="top" secondItem="dH2-TF-dUL" secondAttribute="topMargin" id="2Oz-0X-nKx"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="6Cb-U9-5bc" secondAttribute="trailing" constant="-30" id="AYR-wH-UtP"/>
+                                                <constraint firstItem="6Cb-U9-5bc" firstAttribute="top" secondItem="fgT-Fv-XbB" secondAttribute="bottom" constant="7.5" id="E3F-CB-f1C"/>
+                                                <constraint firstItem="fgT-Fv-XbB" firstAttribute="leading" secondItem="dH2-TF-dUL" secondAttribute="leadingMargin" constant="-4" id="Gvy-SO-UeI"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="FK4-7k-Oru" secondAttribute="bottom" constant="-8" id="UWU-di-2Ec"/>
+                                                <constraint firstItem="6Cb-U9-5bc" firstAttribute="leading" secondItem="dH2-TF-dUL" secondAttribute="leading" id="jhM-5N-nhX"/>
+                                                <constraint firstItem="FK4-7k-Oru" firstAttribute="top" secondItem="6Cb-U9-5bc" secondAttribute="bottom" constant="1" id="jvq-oU-McS"/>
+                                                <constraint firstItem="FK4-7k-Oru" firstAttribute="leading" secondItem="dH2-TF-dUL" secondAttribute="leadingMargin" id="pEx-qu-0Lf"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -273,15 +275,16 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="KGh-MA-fnJ" firstAttribute="leading" secondItem="Ihe-LO-qd1" secondAttribute="leading" id="0wH-op-NS8"/>
-                            <constraint firstAttribute="trailing" secondItem="KGh-MA-fnJ" secondAttribute="trailing" id="64p-g8-cDr"/>
-                            <constraint firstItem="KGh-MA-fnJ" firstAttribute="top" secondItem="Ihe-LO-qd1" secondAttribute="topMargin" constant="-68" id="IBR-lX-U0N"/>
-                            <constraint firstItem="KGh-MA-fnJ" firstAttribute="centerY" secondItem="Ihe-LO-qd1" secondAttribute="centerY" id="JJz-77-x8K"/>
+                            <constraint firstAttribute="trailing" secondItem="KGh-MA-fnJ" secondAttribute="trailing" id="3e4-i4-vwm"/>
+                            <constraint firstItem="KGh-MA-fnJ" firstAttribute="top" secondItem="Ihe-LO-qd1" secondAttribute="topMargin" constant="-68" id="3lF-Dq-AK7"/>
+                            <constraint firstItem="KGh-MA-fnJ" firstAttribute="centerY" secondItem="Ihe-LO-qd1" secondAttribute="centerY" id="FGh-jK-dLj"/>
+                            <constraint firstItem="KGh-MA-fnJ" firstAttribute="leading" secondItem="Ihe-LO-qd1" secondAttribute="leading" id="bov-GY-cNy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="i11-9y-slN"/>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="VCM-k1-5PQ">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="insta_camera_btn" id="Ieb-9c-cwY">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="JKF-kq-T1t"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="Ieb-9c-cwY">
                             <connections>
                                 <segue destination="XnT-1S-sF6" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="buz-Bu-A8V"/>
                             </connections>
@@ -364,7 +367,7 @@
         <!--Navigation Controller-->
         <scene sceneID="Yrh-yO-CPh">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5bm-ku-qPN" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="feedNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="5bm-ku-qPN" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NNg-Gx-ugw">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -382,7 +385,6 @@
     </scenes>
     <resources>
         <image name="image_placeholder" width="375" height="375"/>
-        <image name="insta_camera_btn" width="25" height="25"/>
         <image name="instagram_logo" width="255" height="108"/>
     </resources>
     <inferredMetricsTieBreakers>

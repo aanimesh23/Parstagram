@@ -54,6 +54,7 @@ class feedViewController: UIViewController, UITableViewDelegate, UITableViewData
         let imagefile = post["image"] as! PFFileObject
         let urlstring = imagefile.url!
         let url = URL(string: urlstring)!
+        print(url)
         cell.photoPost.af_setImage(withURL: url)
         
         return cell
