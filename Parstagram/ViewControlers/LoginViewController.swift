@@ -14,14 +14,21 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var PasswordText: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        print("Loded")
+        if UserDefaults.standard.bool(forKey: "logedIn") == true {
+            self.performSegue(withIdentifier: "LogInSegue", sender: nil)
+        }
     }
     
     @IBAction func onLogin(_ sender: Any) {
         PFUser.logInWithUsername(inBackground: UsernameText.text!, password: PasswordText.text!) {
             (user, error) in
             if user != nil {
+                UserDefaults.standard.set(true, forKey: "logedIn")
                 self.performSegue(withIdentifier: "LogInSegue", sender: nil)
             }
             else{

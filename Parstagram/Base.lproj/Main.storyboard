@@ -224,7 +224,7 @@
                                 <rect key="frame" x="0.0" y="20" width="414" height="856"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="feedTableViewCell" rowHeight="370" id="VMd-yX-eVV" customClass="feedTableViewCell" customModule="Parstagram" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="feedTableViewCell" rowHeight="370" id="VMd-yX-eVV" customClass="feedTableViewCell" customModule="Parstagram" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="370"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VMd-yX-eVV" id="dH2-TF-dUL">
@@ -283,7 +283,11 @@
                         <viewLayoutGuide key="safeArea" id="i11-9y-slN"/>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="VCM-k1-5PQ">
-                        <barButtonItem key="leftBarButtonItem" title="Logout" id="JKF-kq-T1t"/>
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="JKF-kq-T1t">
+                            <connections>
+                                <action selector="onLogout:" destination="AGm-DP-hQ8" id="1JK-S8-tNo"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="camera" id="Ieb-9c-cwY">
                             <connections>
                                 <segue destination="XnT-1S-sF6" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="buz-Bu-A8V"/>
